@@ -13,10 +13,10 @@ public interface IRegisterCenter4Provider {
     /**
      *
      */
-    public void registerProvider (final List<ProviderService> serviceMetadata);
+//    public void registerProvider (final List<ProviderService> serviceMetadata);
 
     /**
      *
      */
-    public Map<String,List<ProviderService>> getProviderServiceMap();
+//    public Map<String,List<ProviderService>> getProviderServiceMap();
 }

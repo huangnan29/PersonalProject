@@ -17,13 +17,13 @@ public interface IRegisterCenter4Invoker {
     /**
      *
      */
-    public Map<String List<ProviderService>> getServiceMetaDataMap4Consume();
+//    public Map<String List<ProviderService>> getServiceMetaDataMap4Consume();
 
 
     /**
      *
      */
 
-    public void registerInvoker(final InvokerService invoker);
+//    public void registerInvoker(final InvokerService invoker);
 
 }
