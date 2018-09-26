@@ -4,11 +4,9 @@ import cn.hn.Thread.Student;
 import cn.hn.Thread.Teacher;
 import cn.hn.Thread.Tom;
 import org.junit.Test;
+import org.junit.runners.Parameterized;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 
 /**
@@ -63,5 +61,29 @@ public class CallbackTest {
         ArrayList<String> testString = new ArrayList();
         testString.add("bbb");
         String test2 = testString.get(0);
+    }
+
+
+    @Test
+    public  int lengthOfLongestSubstring(){
+        String s = "safasdfasdfasdf";
+        if(s.length()==0){
+            return 0;
+        }
+        int maxLength=1;
+        List<Character> list=new ArrayList();
+        list.add(s.charAt(0));
+        for(int i=1;i<s.length();i++){
+            if(list.contains(s.charAt(i))){
+                int index=list.indexOf(s.charAt(i));
+                list=list.subList(index+1, list.size());
+                list.add(s.charAt(i));
+                maxLength=Math.max(maxLength, list.size());
+            }else{
+                list.add(s.charAt(i));
+                maxLength=Math.max(maxLength, list.size());
+            }
+        }
+        return maxLength;
     }
 }
