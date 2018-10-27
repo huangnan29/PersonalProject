@@ -50,7 +50,11 @@ http://www.w3.org/2001/XMLSchema-instance ">
             <version>RELEASE</version>
             <scope>test</scope>
         </dependency>
-
+        <dependency>
+            <groupId>com.lmax</groupId>
+            <artifactId>disruptor</artifactId>
+            <version>3.4.2</version>
+        </dependency>
 
     </dependencies>
 

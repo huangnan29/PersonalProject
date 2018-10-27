@@ -879,6 +879,8 @@ public class DateTime implements Serializable {
         System.out.println(getDatePoor(stf, edf));
         System.out.println(getNWandSOW(start2));
 
+        System.out.println("010679389532".substring(2) );
+
 
 //        Collection
 //        Map.Entry

@@ -1,9 +1,7 @@
 package cn.hn.DataStructs;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @author: hn
@@ -12,12 +10,19 @@ import java.util.Set;
  * @desc : TODO
  **/
 public class HashMapTest {
-    public static void collectionTest(){
+    public static void collectionTest() {
         Map<String, String> map = new HashMap<String, String>();
 
-        map.put("hello", "world");
-        map.put("java", "c++");
-        map.put("sql", "os");
+        map.put("1", "one");
+        map.put("2", "tow");
+        map.put("3", "three");
+        map.put("4", "four");
+        map.put("5", "five");
+        map.put("6", "six");
+        map.put("7", "seven");
+        map.put("8", "eight");
+        map.put("9", "nine");
+        map.put("10", "ten");
 
         System.out.println(map);
 
@@ -34,13 +39,21 @@ public class HashMapTest {
     }
 
 
-    public static void setTest(){
+    public static void setTest() {
         Map<String, String> map = new HashMap<String, String>();
 
-        map.put("hello", "world");
-        map.put("java", "c++");
-        map.put("sql", "os");
-        Map.Entry.comparingByKey();
+
+        map.put("1", "one");
+        map.put("2", "tow");
+        map.put("3", "three");
+        map.put("4", "four");
+        map.put("5", "five");
+        map.put("6", "six");
+        map.put("7", "seven");
+        map.put("8", "eight");
+        map.put("9", "nine");
+        map.put("10", "ten");
+
 
         System.out.println(map);
 
@@ -56,9 +69,51 @@ public class HashMapTest {
 
     }
 
+    public static Map<String, String> initMap() {
+        Map<String, String> map = new HashMap<String, String>();
+
+        map.put("1", "one");
+        map.put("2", "tow");
+        map.put("3", "three");
+        map.put("4", "four");
+        map.put("5", "five");
+        map.put("6", "six");
+        map.put("7", "seven");
+        map.put("8", "eight");
+        map.put("9", "nine");
+        map.put("10", "ten");
+
+        return map;
+
+    }
+
+
+
     public static void main(String[] args) {
+
         HashMapTest demo = new HashMapTest();
-        demo.collectionTest();
-        demo.setTest();
+        Map<String, String> map = demo.initMap();
+//        System.out.println(map.keySet());
+        Map<String, String> mapInsert = new HashMap<>();
+        mapInsert.put("16", "1six");
+        mapInsert.put("17", "1seven");
+        mapInsert.put("18", "1eight");
+        mapInsert.put("19", "1nine");
+        mapInsert.put("110", "1ten");
+        map.putAll(mapInsert);
+//        for(Map.Entry<String,String> test : map.entrySet()) {
+//            System.out.println(test);
+//        }
+
+
+        Iterator<Map.Entry<String, String>> iter = map.entrySet().iterator();
+        while (iter.hasNext()) {
+            System.out.println(iter.next());
+        }
+
+
+//        ConcurrentHashMap
+        //        System.out.println(map.keySet());
+
     }
 }
