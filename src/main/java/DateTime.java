@@ -10,7 +10,9 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Collection;
 import java.util.Date;
+import java.util.Map;
 
 public class DateTime implements Serializable {
 
@@ -850,6 +852,7 @@ public class DateTime implements Serializable {
         return String.format("%04d", week) + String.format("%06d", second);
     }
 
+    
 
     public static void main(String[] args) throws ParseException {
         //获取周计数
@@ -877,5 +880,7 @@ public class DateTime implements Serializable {
         System.out.println(getNWandSOW(start2));
 
 
+//        Collection
+//        Map.Entry
     }
 }

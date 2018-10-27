@@ -40,6 +40,7 @@ public class HashMapTest {
         map.put("hello", "world");
         map.put("java", "c++");
         map.put("sql", "os");
+        Map.Entry.comparingByKey();
 
         System.out.println(map);
 
