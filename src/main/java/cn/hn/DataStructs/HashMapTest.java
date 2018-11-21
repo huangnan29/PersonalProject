@@ -42,6 +42,7 @@ public class HashMapTest {
     public static void setTest() {
         Map<String, String> map = new HashMap<String, String>();
 
+
         map.put("1", "one");
         map.put("2", "tow");
         map.put("3", "three");
@@ -52,6 +53,7 @@ public class HashMapTest {
         map.put("8", "eight");
         map.put("9", "nine");
         map.put("10", "ten");
+
 
         System.out.println(map);
 
