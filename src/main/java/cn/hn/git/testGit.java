@@ -8,6 +8,10 @@ package cn.hn.git;
  **/
 public class testGit {
     public static void main(String[] args) {
+
         System.out.println("test How");
+
+        System.out.println("this is a test");
+
     }
 }
