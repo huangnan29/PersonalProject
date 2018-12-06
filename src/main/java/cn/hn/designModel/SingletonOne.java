@@ -18,7 +18,7 @@ public class SingletonOne {
     }
 
     public static void main(String[] args) {
-        Disruptor
+
     }
 
 }
