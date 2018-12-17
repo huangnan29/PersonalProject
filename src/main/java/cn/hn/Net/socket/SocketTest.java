@@ -1,4 +1,4 @@
-package cn.hn.socket;
+package cn.hn.Net.socket;
 
 import java.io.IOException;
 import java.io.InputStream;
