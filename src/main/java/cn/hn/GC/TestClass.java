@@ -1,5 +1,6 @@
 package cn.hn.GC;
 
+<<<<<<< HEAD
 import jdk.internal.util.xml.impl.Input;
 
 import java.io.IOException;
@@ -12,11 +13,22 @@ import java.io.InputStream;
  * @desc : TODO
  */
 public class TestClass {
+=======
+/**
+ * @author: hn
+ * @email : hn@runisys.com
+ * @date : 18-12-3 下午3:25
+ * @desc : TODO
+ **/
+public class TestClass {
+
+>>>>>>> 55e0aea69ce0c414e65f530937c653b2d03c8d4f
     private int m;
     public int inc(){
         return m+1;
     }
 
+<<<<<<< HEAD
     public static void main(String[] args) throws Exception {
         ClassLoader myload = new ClassLoader() {
             @Override
@@ -42,4 +54,6 @@ public class TestClass {
 
 
     }
+=======
+>>>>>>> 55e0aea69ce0c414e65f530937c653b2d03c8d4f
 }

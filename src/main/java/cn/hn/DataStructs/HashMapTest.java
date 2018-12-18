@@ -44,6 +44,7 @@ public class HashMapTest {
 
 
         map.put("1", "one");
+        map.put("1", "one");
         map.put("2", "tow");
         map.put("3", "three");
         map.put("4", "four");
