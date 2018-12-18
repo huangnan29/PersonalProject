@@ -23,6 +23,8 @@ public class MyOuterStatic {
 
     public static void main(String[] args){
         MyOuterStatic.Myinner si = new MyOuterStatic.Myinner();
+        Myinner si2 = new Myinner();
         si.innerMethod();
+        si2.innerMethod();
     }
 }
